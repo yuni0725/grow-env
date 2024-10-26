@@ -1,15 +1,28 @@
 import { createGlobalStyle } from "styled-components";
 import { reset } from "styled-reset";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./routes/home";
+import "./fonts/font.css";
+import About from "./routes/about";
+import One from "./routes/one";
+import Two from "./routes/two";
 
 const router = createBrowserRouter([
   {
     path: "/home",
-    element: <></>,
+    element: <Home></Home>,
   },
   {
     path: "/about",
-    element: <></>,
+    element: <About></About>,
+  },
+  {
+    path: "/one",
+    element: <One></One>,
+  },
+  {
+    path: "/two",
+    element: <Two></Two>,
   },
 ]);
 
@@ -21,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family : 'Pretendard', 'Open Sans', 'Helvetica Neue', sans-serif
   }
 `;
 
