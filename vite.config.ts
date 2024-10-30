@@ -5,5 +5,5 @@ import VitePluginRewriteAll from "vite-plugin-rewrite-all";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePluginRewriteAll()],
-  base: "/grow-env",
+  base: "/grow-env/",
 });
