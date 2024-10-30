@@ -27,7 +27,7 @@ const Start = styled.div`
 `;
 
 const GameImage = styled.div`
-  background-image: url("gameTwo.webp");
+  background-image: url("gameTwo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,7 +149,7 @@ function Two() {
           </StartMenu>
         </Start>
         <Images>
-          <Image style={{ backgroundImage: `url('gameTwoOne.png')` }}></Image>
+          <Image style={{ backgroundImage: `url('gameTwoOne.jpg')` }}></Image>
         </Images>
         <Info>
           <InfoTitle>콘텐츠 정보</InfoTitle>

@@ -72,7 +72,7 @@ function Home() {
       <Wrapper>
         <Intro></Intro>
         <ContentBox>
-          <LinkNoDecoration to="./one">
+          <LinkNoDecoration to="/one">
             <Content>
               <ContentTag>
                 <span>환경</span>
@@ -87,7 +87,7 @@ function Home() {
               ></ContentImg>
             </Content>
           </LinkNoDecoration>
-          <LinkNoDecoration to="./two">
+          <LinkNoDecoration to="/two">
             <Content>
               <ContentTag>
                 <span>환경</span>
@@ -97,7 +97,7 @@ function Home() {
               </ContentTitle>
               <ContentImg
                 style={{
-                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("gameTwo.webp")`,
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("gameTwo.jpg")`,
                 }}
               ></ContentImg>
             </Content>

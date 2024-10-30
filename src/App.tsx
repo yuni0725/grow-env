@@ -7,6 +7,8 @@ import About from "./routes/about";
 import One from "./routes/one";
 import Two from "./routes/two";
 import Padlet from "./routes/padlet";
+import { useEffect, useState } from "react";
+import { auth } from "./firebase";
 
 const router = createBrowserRouter([
   {
@@ -48,10 +50,22 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function App() {
+  const [isLoading, setLoading] = useState(true);
+  const init = async () => {
+    await auth.authStateReady();
+    setLoading(false);
+  };
+  useEffect(() => {
+    init();
+  }, []);
   return (
     <>
       <GlobalStyles></GlobalStyles>
-      <RouterProvider router={router}></RouterProvider>
+      {isLoading ? (
+        <div></div>
+      ) : (
+        <RouterProvider router={router}></RouterProvider>
+      )}
     </>
   );
 }

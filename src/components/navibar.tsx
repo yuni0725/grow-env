@@ -67,7 +67,7 @@ function NaviBar() {
           <Columns></Columns>
         </Center>
         <Columns>
-          <LinkNoDecoration to="./">
+          <LinkNoDecoration to="/home">
             <Content>Home</Content>
           </LinkNoDecoration>
           <LinkNoDecoration to="/about">
