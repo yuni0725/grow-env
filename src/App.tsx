@@ -47,6 +47,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family : 'Pretendard', 'Open Sans', 'Helvetica Neue', sans-serif
   }
+
+  *::-webkit-scrollbar {
+  display: none;
+  }
 `;
 
 function App() {
